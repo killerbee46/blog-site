@@ -17,7 +17,7 @@ export const getToken = () => {
 }
 
 export const login = async(data:any) => {
-    const tempUser = await getUsers({}).then(async(res)=>{
+    const tempUser = await getUsers().then(async(res)=>{
         const temp = await res?.data
         const userExists = await temp?.find((f:any)=>f?.email === data?.email)
 

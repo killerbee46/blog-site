@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Button, Typography } from "@mui/material";
+import { Button } from "@mui/material";
 
 export default function FileUpload({ onFileSelect }: any) {
   const [base64, setBase64] = useState<any>("");
@@ -20,6 +20,7 @@ export default function FileUpload({ onFileSelect }: any) {
     if (!file) return;
 
     const base64Data = await fileToBase64(file);
+    console.log(base64)
     setBase64(base64Data);
     setPreview(base64Data);
     onFileSelect(base64Data)

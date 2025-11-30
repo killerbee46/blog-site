@@ -1,5 +1,4 @@
 import { useQuery } from "@tanstack/react-query";
-import React from "react";
 import Slider from "react-slick";
 import { getBlogs } from "../api/BlogApi";
 import BlogCard from "./BlogCard";

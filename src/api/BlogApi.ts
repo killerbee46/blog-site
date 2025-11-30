@@ -1,6 +1,6 @@
 import API from "./Api";
 
-export const getBlogs = (data: any) => {
+export const getBlogs = () => {
   return API({
     method: "GET",
     url: "/blogs",
